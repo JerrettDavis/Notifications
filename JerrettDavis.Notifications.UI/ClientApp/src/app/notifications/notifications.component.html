@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="sendNotification()">Send a Notification</button>
+
+<div *ngFor="let notification of notifications" class="notification"
+     [ngClass]="notification.state === 0 ? 'unacknowledged' : ''"
+      (click)="acknowledge(notification)">
+  <div>{{notification.message}} - {{ notification.timeStamp | date: 'medium' }}</div>
+</div>
+
+<div *ngIf="loading">Loading...</div>
+
+

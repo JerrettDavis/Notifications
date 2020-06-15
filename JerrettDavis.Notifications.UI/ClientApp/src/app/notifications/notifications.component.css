@@ -1,0 +1,13 @@
+.notification.unacknowledged {
+  border-color: #CCCC00;
+  background-color: #CCCC0022;
+  cursor: pointer;
+}
+
+.notification {
+  padding: 16px 8px;
+  margin: 8px 0;
+  border: 1px solid #1861ac;
+  background-color: #1861AC22;
+  border-radius: 2px;
+}
